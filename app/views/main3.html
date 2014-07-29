@@ -1,0 +1,40 @@
+<div class="header">
+  <ul class="nav nav-pills pull-left">
+    <li class="active"><a ng-href="#">Want an open classroom?</a></li>
+  </ul><br>
+</div>
+
+<div class="jumbotron">
+
+
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="Day" ng-model="searchDay">
+	</div>
+
+
+	<div class="input-group" ng-controller="gatherData">
+		<input type="text" class="form-control" placeholder="Time" ng-model="searchTime" > 
+	</div>
+
+
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="How long do you want it? ">
+	</div>
+
+
+
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="Building">
+	</div>
+
+
+	<br>
+	<div ng-controller="resultInfo">
+		{{result}}	
+	</div>
+</div>
+
+
+<div class="footer">
+  <p>Developed by none other than Sunny Shah.</p>
+</div>
